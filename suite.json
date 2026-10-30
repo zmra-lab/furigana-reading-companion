@@ -1,0 +1,34 @@
+{
+  "id": "com.zmra.suite.language-companion",
+  "slug": "language-companion",
+  "name": {
+    "en": "ZMRA Language Companion (Furigana & Phonetic Reading Aid)",
+    "zh-CN": "ZMRA 多语言助读与振假名伴侣",
+    "ja": "ZMRA ふりがな・発音支援コンパニオン"
+  },
+  "vendor": "ZMRA",
+  "author": "ZMRA Language Lab",
+  "icon": "languages",
+  "description": {
+    "en": "Lightweight multilingual reading assistant and browser extension. Automatically generates Japanese Furigana (振假名), Chinese Pinyin ruby tags, and English phonetic annotations.",
+    "zh-CN": "轻量级多语言助读伴侣与浏览器插件。支持日语振假名（Furigana）标注、中文拼音上标注音与英语国际音标辅助。",
+    "ja": "軽量な多言語読解支援ツールおよびブラウザ拡張機能。日本語のルビ（ふりがな）、中国語ピンイン、英語発音記号の自動付与に対応。"
+  },
+  "features": [
+    "Japanese Kanji Furigana (振假名) Ruby tag auto-generation with Hiragana / Katakana / Romaji toggle",
+    "Chinese Hanzi to Pinyin Ruby annotation with 4-tone marks",
+    "English phonetic IPA transcription & syllabification aid",
+    "One-click HTML Ruby, Markdown, and Flashcard format export",
+    "Dual-mode: Standalone Web / Desktop App & WebExtension (Chrome / Edge / Firefox)",
+    "Privacy-first offline parsing with zero data collection"
+  ],
+  "version": "1.0.0",
+  "category": "education",
+  "price": "0",
+  "isPublic": true,
+  "accessControl": "public-open",
+  "scenarios": ["language-learning", "reading-aid", "browser-extension", "flashcard-authoring", "desktop-widget"],
+  "requirements": ["client:browser-extension", "webgl2-optional"],
+  "scriptEntryPoint": "index.html",
+  "homepage": "https://zmra.com"
+}

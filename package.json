@@ -1,0 +1,27 @@
+{
+  "name": "furigana-reading-companion",
+  "version": "1.0.0",
+  "description": "Privacy-first Japanese Furigana (振假名) Ruby Annotation Assistant & Browser Extension by ZMRA",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 3000 ."
+  },
+  "keywords": [
+    "furigana",
+    "furigana-maker",
+    "japanese-learning",
+    "ruby-annotation",
+    "jlpt",
+    "browser-extension",
+    "chrome-extension",
+    "anki",
+    "zmra"
+  ],
+  "author": "ZMRA <contact@zmra.com> (https://zmra.com)",
+  "homepage": "https://zmra.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zmra-lab/furigana-reading-companion.git"
+  }
+}

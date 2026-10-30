@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "ZMRA Furigana Companion",
+  "short_name": "ZMRA Furigana",
+  "version": "1.0.0",
+  "description": "Smart Japanese Furigana (振假名) Ruby annotation assistant by ZMRA. Privacy-first offline linguistics.",
+  "author": "ZMRA (https://zmra.com)",
+  "homepage_url": "https://zmra.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "ZMRA Furigana Companion",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ]
+}

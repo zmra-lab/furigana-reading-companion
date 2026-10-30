@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZMRA Furigana Companion | 日本語・振仮名ルビ助読伴侶</title>
+    <meta name="description" content="ZMRA Furigana Reading Companion: Offline-first Japanese Kanji to Furigana Ruby annotation assistant.">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app-layout">
+      <!-- Top Brand Header -->
+      <header class="header">
+        <div class="brand">
+          <div class="brand-logo" style="background: linear-gradient(135deg, #818cf8 0%, #ec4899 100%);">Z</div>
+          <div>
+            <div class="brand-title">ZMRA Furigana Companion</div>
+            <div class="brand-subtitle">振仮名 (Furigana) · ローマ字 · JLPT 読解学習</div>
+          </div>
+        </div>
+        <div class="header-actions">
+          <span style="font-size: 0.72rem; color: var(--text-secondary); padding: 4px 10px; background: rgba(255,255,255,0.04); border-radius: 6px; border: 1px solid var(--border-dim);">
+            🇯🇵 日本語解析エンジン (Offline-First)
+          </span>
+          <a href="https://zmra.com" target="_blank" rel="home" class="badge-link">
+            ZMRA 官网 · 商务咨询 ↗
+          </a>
+        </div>
+      </header>
+
+      <!-- Main Workspace -->
+      <main class="main-content">
+        <!-- Input & Preview Section -->
+        <section class="workspace-grid">
+          <div class="panel input-panel">
+            <div class="panel-header">
+              <span class="panel-title">日本語原文 (Source Text)</span>
+              <div class="preset-buttons">
+                <button type="button" class="btn-chip" id="btn-sample">填入范例文</button>
+                <button type="button" class="btn-chip" id="btn-clear">清空</button>
+              </div>
+            </div>
+            <textarea
+              id="input-text"
+              class="text-input"
+              placeholder="在此输入或粘贴需要注音的日文文本（如：夏目漱石の『吾輩は猫である』やニュース記事）..."
+            ></textarea>
+            <div class="panel-footer">
+              <span id="char-count" class="meta-info">0 字符</span>
+              <div class="action-buttons">
+                <button type="button" id="btn-convert" class="btn-primary">⚡ 即刻生成振假名 (Annotate)</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel output-panel">
+            <div class="panel-header">
+              <span class="panel-title">振仮名ルビ表示 (Ruby Preview)</span>
+              <div class="preset-buttons">
+                <button type="button" class="btn-chip" id="toggle-hover-mode" title="开启后读音默认隐藏，鼠标悬停时才显示">👁️ 懸賞顯音 (Hover Recall)</button>
+                <button type="button" class="btn-chip" id="toggle-romaji" title="切换平假名/罗马音标注">🔤 ローマ字 (Romaji)</button>
+                <button type="button" class="btn-chip" id="btn-speak" title="朗读当前日文文本">🔊 発音朗読 (TTS)</button>
+              </div>
+            </div>
+            <div id="ruby-output" class="ruby-display" tabindex="0">
+              <span class="placeholder-text">振假名注音结果将在此以优雅的 Ruby 上标格式呈现...</span>
+            </div>
+            <div class="panel-footer">
+              <div class="export-actions">
+                <button type="button" class="btn-secondary" id="btn-copy-html">📋 复制 HTML &lt;ruby&gt;</button>
+                <button type="button" class="btn-secondary" id="btn-copy-md">📋 复制 Markdown</button>
+                <button type="button" class="btn-secondary" id="btn-export-anki">🗂️ 导出 Anki 记忆卡 (TSV)</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-left">
+          <span>ZMRA Furigana Reading Companion v1.0.0</span> · 
+          <span>© 2026 ZMRA. All Rights Reserved.</span>
+        </div>
+        <div class="footer-right">
+          <span>商务合作: <a href="mailto:contact@zmra.com" style="color:var(--text-primary);text-decoration:none;font-weight:600;">contact@zmra.com</a></span> · 
+          <a href="https://zmra.com" target="_blank" rel="home">ZMRA 官方主页</a> · 
+          <a href="https://github.com/zmra-lab" target="_blank" rel="noopener noreferrer">GitHub 组织</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

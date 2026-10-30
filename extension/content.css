@@ -1,0 +1,9 @@
+.zmra-ruby {
+  ruby-align: center;
+}
+.zmra-ruby rt {
+  font-size: 0.6em;
+  color: #0284c7;
+  font-weight: 500;
+  user-select: none;
+}
